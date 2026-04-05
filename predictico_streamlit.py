@@ -18,7 +18,7 @@ modelo, labelencoder, variables = cargar_modelo()
 @st.cache_data
 def cargar_datos():
     # Asegúrate de que este sea el nombre exacto de tu archivo en GitHub
-    return pd.read_csv('dataset_final.xlsx') 
+    return pd.read_excel('dataset_final.xlsx') 
 
 df_base = cargar_datos()
 
